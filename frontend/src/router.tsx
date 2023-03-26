@@ -1,16 +1,26 @@
 import { createBrowserRouter } from "react-router-dom";
-import App from "./App";
+import Dashboard from "./views/Dashboard";
+import PageNotFound from "./views/error/PageNotFound";
 import Login from "./views/Login";
-import PageNotFound from "./views/PageNotFound";
+import Signup from "./views/Signup";
+import Surveys from "./views/Surveys";
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App/>
+    element: <Dashboard/>
   },
   {
     path: '/login',
     element: <Login/>
+  },
+  {
+    path: '/signup',
+    element: <Signup/>
+  },
+  {
+    path: '/surveys',
+    element: <Surveys/>
   },
   {
     path: '*',
