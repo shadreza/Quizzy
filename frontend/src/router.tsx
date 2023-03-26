@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./views/Dashboard";
 import PageNotFound from "./views/error/PageNotFound";
 import Login from "./views/Login";
@@ -11,12 +12,22 @@ const router = createBrowserRouter([
     element: <Dashboard/>
   },
   {
-    path: '/login',
-    element: <Login/>
-  },
-  {
-    path: '/signup',
-    element: <Signup/>
+    path: '/',
+    element: <GuestLayout />,
+    children: [
+      {
+        path: 'login',
+        element: <Login/>
+      },
+      {
+        path: 'signup',
+        element: <Signup/>
+      },
+      {
+        path: '*',
+        element: <PageNotFound/>
+      }
+    ]
   },
   {
     path: '/surveys',
