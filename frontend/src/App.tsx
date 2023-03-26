@@ -1,11 +1,10 @@
-import { BanknotesIcon } from '@heroicons/react/24/solid'
+import Login from './components/auth/Login'
 
 const App = () => {
   return (
-    <div className="bg-white dark:bg-purple-300">
-      App
+    <div className="bg-gray-100 dark:bg-gray-800">
       <div>
-        <BanknotesIcon className="w-6"/>
+        <Login/>
       </div>
     </div>
   )
