@@ -8,7 +8,7 @@ const GuestLayout = () => {
       <div className="w-full max-w-md space-y-8">
         <div>
           <LazyLoadImage
-            className="mx-auto h-16 w-auto"
+            className="mx-auto h-12 sm:h-16 w-auto"
             src={image}
           />
         </div>
