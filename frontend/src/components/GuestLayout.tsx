@@ -1,6 +1,6 @@
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Outlet } from 'react-router-dom';
-import image from '../../public/quiz.png';
+import image from '../assets/images/quiz.png';
 
 const GuestLayout = () => {
   return (
